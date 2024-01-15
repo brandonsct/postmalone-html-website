@@ -1,0 +1,515 @@
+/* SO CHIN TING 1155156676 */
+
+/* for href tag  */
+.anchor {
+    position: absolute;
+    transform: translateY(-50vh);
+  }
+
+/* make page dark theme */
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #17141d;
+    color: white;
+    font-family: 'DM Mono', monospace;
+    border-radius: 0px;
+}
+
+
+#artistName {
+    font-family: 'DJ Gross', sans-serif;
+    cursor: pointer;
+}
+
+
+
+/* this is for progress Bar */
+
+#progressBar{
+    top:3.5rem;
+    z-index:1;
+
+}
+#taskBar{
+    position: fixed;
+    top: 4rem;
+    left: 0;
+    width: 100%;
+    height: 3.5rem;
+    opacity: 0.7;
+    z-index: 100;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    padding:10px;
+    visibility: hidden;
+}
+
+
+#task2{
+    background-color: grey;
+  
+}
+
+#task3{
+    background-color: red;
+
+}
+
+
+#navbar {
+    opacity: 0.7;
+
+    z-index: 10;
+}
+
+.menue{
+/* doesnt allow hightlight */
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+
+/* css for subscribe button */
+
+#sticky{
+    position: fixed;
+    top: 58%;
+    right: 0;
+    padding: 10px;
+    background-color: grey;
+    border: 2px solid black;
+    z-index: 100;
+    /* display: flex;
+    flex-direction: column; */
+    width: max-content;
+    margin-left:auto;
+    height:fit-content;
+    font-family: 'MetropolitanoRegular';
+   font-weight: normal;
+   font-style: normal;
+    border-radius: 10px 10px 10px 10px;
+}
+
+
+#upper_sticky{
+    /* position: relative;
+    display: flex;
+    flex-direction: row; */
+    padding:5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#sticky_info{
+    font:bold;
+    justify-self: start;
+    margin-right:10px
+
+}
+#sticky_button{
+    height: min-content;
+    width: min-content;
+    background-color: transparent;
+    border: transparent;
+
+}
+#sticky_button:hover{
+    color:#FFFFFF;
+}
+
+#sub_button{
+    background-color: #FFFFFF;
+    /* border:transparent; */
+}
+#sub_button:hover{
+    background-color:black;
+    color: #FFFFFF;
+}
+
+
+
+
+
+#flex_side_bar{
+    display:flex;
+    flex-direction: row;
+    position: fixed;
+    z-index: 10;
+    top:50%;
+}
+.icon-bar {
+
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 10;
+   
+  }
+  
+
+
+
+  .icon-bar a {
+
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+    z-index: 10;
+    position: relative;
+
+  }
+  
+  .icon-bar a:hover {
+    background-color: #000;
+  }
+  
+  .facebook {
+    border-radius: 10px 10px 0px 0px;
+    background: #3B5998;
+    color: white;
+  }
+  
+  .twitter {
+    background: #FFFFFF;
+    color: black;
+  }
+  .instagram{
+    background: palevioletred;
+    color: white;
+  }
+  
+  
+  .youtube {
+    background: #bb0000;
+    color: white;
+    border-radius: 0px 0px 10px 10px;
+
+  }
+
+  
+  #toggle{
+    background-color: red;
+   
+    position: relative;
+    top:-25px;
+    height:fit-content;
+    width:fit-content;
+    padding:10px;
+    border-radius:0px 10px 10px 0px;
+  }
+  #toggleUp{
+    background-color: red;
+ 
+    position: fixed;
+
+    height:fit-content;
+    width:fit-content;
+    padding:10px;
+    border-radius:10px 0px 0px 10px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.img-car {
+    width: 100vh
+}
+
+
+/* this part is for about */
+
+
+#aside {
+    
+    width: 20%;
+    height: min-content;
+    padding-left: 0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+
+
+    float: right;
+    box-shadow: inset 5px 0 5px -5px #29627e;
+    font-style: italic;
+    color: #29627e;
+    background-color: grey;
+    border-radius: 10px 10px 10px 10px;
+  }
+  
+#about{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+    padding-top:5vh;
+    padding-bottom:5vh;
+
+    font-size: 20px;
+    z-index: 0;
+}
+
+
+#about_des{
+    width: 100%;
+
+}
+
+
+
+
+/* this part is for album section */
+.album {
+    padding: 10px;
+    max-width: 18rem;
+    max-height: 18rem;
+    margin: 10px
+}
+
+.album:focus {
+    background: red;
+    transition: 0.2s;
+
+}
+
+.albumClick {
+    max-width: 18rem;
+    max-height: 18rem;
+    padding: 0;
+}
+
+
+.card-body{
+    text-align: center;
+}
+
+.albumClick .album {
+    background-color: transparent !important;
+    border: transparent !important;
+    margin: 0px !important;
+
+}
+
+.albumClick:focus {
+    background-color: red;
+    /* transition: 0.2s; */
+    /* transform: scale(1.1); */
+    transition: 0.5s;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.specAlbum {
+    padding: 10px;
+    max-width: 18rem;
+    max-height: 18rem;
+    background: transparent;
+}
+
+#album-layout {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0px 20px 0px 20px;
+}
+
+.card-img-top {
+    min-height: 200px;
+
+    overflow: hidden;
+}
+
+.card-title {
+    color: #17141d
+}
+
+.album:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+
+/* for news */
+
+.coverPage {
+    display: flex;
+    padding: 3rem;
+    overflow: scroll;
+    flex-direction: row;
+    width:100%;
+}
+
+
+/* this make original scroll bar disappear */
+.coverPage::-webkit-scrollbar {
+
+    width: 0px;
+    height: 0px;
+
+}
+
+
+.news {
+
+    width: 400px;
+    min-width: 250px;
+    padding: 1.5rem;
+    border-radius: 16px;
+
+
+    background: red;
+    box-shadow: -1rem 0 3rem #000;
+    display: flex;
+    flex-direction: column;
+    transition: .2s;
+
+    scroll-snap-align: start;
+    clear: both;
+    position: relative;
+}
+
+
+
+/* when class news is being hover it move 200px on x axis  */
+.news:hover~.news {
+    transform: translateX(200px);
+}
+
+/* animate for pick up effect */
+.news:hover {
+    transform: translateY(-1rem);
+}
+
+/* Allow overlap from right to left */
+.news:not(:first-child) {
+    margin-left: -130px;
+}
+
+.news_img {
+    border-radius: 10px 10px 10px 10px;
+    height: 300px
+}
+
+/* featuresDetail */
+#featuresDetail {
+    display: flex;
+    flex-direction: row;
+}
+
+#des_box {
+    width: 300px;
+    background-color: antiquewhite;
+    height: 500px;
+    margin-left: 20px;
+    border-radius: 20px;
+    padding:5px;
+    padding-top: 10px;
+    color: black;
+}
+
+
+
+/* this part is for award */
+#award{
+    padding-top:100px;
+    padding-bottom:100px;
+
+}
+table {
+    width: 100%;
+    border:1px white solid;
+  }
+  
+  th {
+    text-align: center;
+    height: 70px;
+    border:1px white solid;
+
+  }
+  td{
+    text-align: center;
+    border:1px white solid;
+
+  }
+  
+/* this is for concert */
+
+#concert{
+    height: 500px;
+    width: 100%;
+    background-image: url("./img/Computer-Wallpaper-4k-Post-Malone.jpg");
+    align-items: center;
+    display: grid;
+    overflow: hidden;
+}
+/* spotLight */
+
+#spotLight{
+    background-color: green;
+    font-family: 'NemoyBold';
+    font-weight: bold;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:500px;
+    width: 100%;
+}
+
+#spotList{
+    height: max-content;
+    width:80%;
+
+
+}
+
+
+/* comment */
+
+#comment_card {
+    padding:1.5vh;
+    background-color: rgb(249, 212, 143);
+    width: 100%;
+    height: max-content;
+    bottom: 0px;
+    border-radius: 20px 20px 0px 0px;
+    color:black;
+}
+
+#inner_box {
+    position: relative;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+#comment_form {
+    padding: 20px;
+}
+
+#join_text {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
